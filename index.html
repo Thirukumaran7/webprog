@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:'Poppins', sans-serif;
+        }
+        .hill{
+            position:relative;
+            width:100%;
+            height:100vh;
+            background:blue;
+        }
+        nav{
+            display:flex;
+            width:84%;
+            margin:auto;
+            padding:20px 0;
+            align-items:center;
+            justify-content:space-between;
+        }
+        nav ul li{
+            display:inline-block;
+            list-style:none;
+            margin:10px 20px;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:blue;
+            font-weight:bold;
+        }
+        nav ul li a:hover{
+            color:red;
+        }
+        .detel{
+            margin-left:8%;
+            margin-top:15%;
+        }
+        .detel h1{
+            font-size:50px;
+            color:#212121;
+            margin-bottom:20px;
+        }
+        span{
+            color:black;
+        }
+        .detel p{
+            color:#141212;
+            line-height:22px;
+        }
+        .detel a{
+            background:#212121;
+            padding:10px 18px;
+            text-decoration:none;
+            font-weight:bold;
+            color:#fff;
+            display:inline-block;
+            margin:30px 0;
+            border-radius:10px;
+        }
+        .images{
+            width:45%;
+            height:80%;
+            position:absolute;
+            bottom:0;
+            right:100px;
+        }
+        .images img{
+            height:100%;
+            position:absolute;
+            left:50%;
+            bottom:0;
+            transform:translateX(-50%);
+            transition:bottom 1s,left 1s;
+        }
+        .contacts h1{
+            font-size:50px;
+            color:#212121;
+            margin-bottom:20px;
+        }
+        .contacts{
+            margin-left:8%;
+            margin-top:15%;
+        }
+        .contacts p{
+            color:#141212;
+            line-height:22px;
+        }
+        .contacts a{    
+            background:#212121;
+            padding:10px 18px;
+            text-decoration:none;
+            font-weight:bold;
+            color:#fff;
+            display:inline-block;
+            margin:30px 0;
+            border-radius:10px;
+        }
+        .home-sci{
+            position:absolute;
+            bottom:40px;
+            width:170px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .home-sci a{
+            position:relative;
+            display:inline-flex;
+            justify-content:center;
+            align-items:center;
+            width:40px;
+            height:40px;
+            background:transparent;
+            border:2px solid black;
+            border-radius:50%;
+            font-size:20px;
+            color:blue;
+            text-decoration:none;
+            z-index:1;
+            overflow:hidden;
+            transition:.5s;
+        }
+        .home-sci a::before{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:#ccccff;
+            z-index:-1;
+            transition:.5s;
+        }
+        .home-sci a:hover::before{
+            width:100%;
+        }
+        .home-sci a:hover{
+            color:#081b29;
+        }
+    </style>
+</head>
+<body>
+    <div class="hill">
+        <nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqiaIIzAj8I-lK67FHhjcpTnizNmmbmBiP-XLZNL2g-w&s"class="logo" style="height:30px;width:75px">
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>I am <span>Thirukumaran</span></h1>
+            <p>This is my portfolio done for web programming lab as a digital assignment
+            <br>Details
+        </p>
+        <a href="#">DOWNLOAD PORTFOLIO</a>
+        </div>
+        <div class="images">
+            <img src="" class="shape">
+            <img src=""  class="for">
+        </div>
+        <br><br><br><br><div class="home-sci">
+            <a href="#"><i class='bx bxl-meta'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <div class="contacts">
+        
+        </div>
+    </div>
+
+
+    <div style="background-color:rgb(46, 49, 32); border:5px solid white; padding:40px; margin:20px; width:280px;">
+        <h3>MENU</h3>
+        <ul type="square">
+            <li><a href="#intro">About myself</a>
+            <li><a href="#education">Educational Qualifications</a>
+            <li><a href="#skills">Skillset</a>
+            <li><a href="#exp">Experience</a>
+            <li><a href="#achieve">Achievements</a>
+            <li><a href="#contact">Contact details and address</a>
+        </ul></div>
+        
+        
+        
+        <section>
+        <a href="#"><i class="ri-github-fill"</i></a>
+        <br>
+        <i class="ri-linkedin-fill"></i>
+        <br>
+        
+        </section>
+        
+        <img src="./PHO.jpg" style="float:right; margin-right:150px;" width="300px" alt="thirukumaran">
+        
+        <br>
+        <section>
+        <article><h3 id="intro">About Myself</h3>
+        <p>Hello, this is THIRUKUMARAN, and this webpage is my Portfolio<br>Here are some basic information about me...</p>
+        <p><b>Name:THIRUKUMARAN</b><br>
+        <b>Age:19</b><br>
+        <b>Gender:M</b><br>
+        <b>Institute:VIT</b></p>
+        </article>
+        
+        <article><h3 id="education">Educational Qualifications</h3>
+        <p>Currently pursuing a Bachelor's degree in VIT.
+        <br><b>B.Tech Computer Science and Engineering</b></p>
+        </article>
+        
+        <article><h3 id="skills">Skillsets</h3>
+        <p><ul>
+        <li>hard working</li>
+        <li>good communication skills</li>
+        <li>good teamwork</li>
+        </ul></p>
+        </article>
+        
+        <article><h3 id="exp">Experience</h3>
+        <p><ol>
+        <li>web development for 2 years</li>
+        </ol></p>
+        </article>
+        
+        <article><h3 id="achieve">Achievements</h3>
+        <p></p>
+        </article>
+        
+        <article><h3 id="contact">Contact details and address</h3>
+        <table border="2px" style="margin:2px; width:40%;">
+        <tr><th colspan="2"><b>Contact</b></th></tr>
+        <tr><th><b>Phone</b></th>    <td>+91 9444452211</td></tr>
+        <tr><th><b>Email</b></th> <td><a href="malito:thiru@gmail.com">thiru@gmail.com</a></td></tr>
+        <tr><th colspan="2"><b>Address</b></th></tr>
+        <tr><th><b>City</b></th>     <td>chennai</td></tr>
+        <tr><th><b>State</b></th>    <td>TAMIL NADU</td></tr>
+        <tr><th><b>Pincode</b></th>  <td></td></tr>
+        </table>
+        </article>
+        </section>
+        </div>
+        <footer align="center"><p><hr>Thanks for reading my portfolio</p></footer>
+        </body>
+        </html>    
+</body>
+</html>
